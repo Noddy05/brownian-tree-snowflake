@@ -1,4 +1,4 @@
-float randomSpread = 6;
+float randomSpread = 3;
 
 class Particle {
   float x, y;
@@ -17,7 +17,7 @@ class Particle {
   }
   
   void resetParticle(){
-    x = width / 2 - 50;
+    x = size;
     y = 0;
     if(checkCollisions(false)){
       noLoop();
@@ -25,11 +25,14 @@ class Particle {
   }
   
   boolean checkCollisions(boolean resetParticle){
-    for(PVector crystal : snowCrystals){
-      if(squaredDistance(x, abs(y), crystal.x, abs(crystal.y)) <= particleRadius * particleRadius){
+    for(int i = 0; i < snowCrystals.size(); i++){
+      PVector crystal = snowCrystals.get(snowCrystals.size() - 1 - i);
+      
+      if(squaredDistance(x, abs(y), crystal.x, abs(crystal.y)) <= particleDiameter * particleDiameter){
         snowCrystals.add(new PVector(x, y));
         if(resetParticle)
           resetParticle();
+          
         return true;
       }
     }
@@ -46,6 +49,6 @@ class Particle {
   
   void drawParticle(){
     fill(255);
-    circle(x, y, particleRadius);
+    circle(x, y, particleDiameter);
   }
 }
