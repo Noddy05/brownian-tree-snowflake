@@ -3,9 +3,9 @@ Day 3 of December. Generating snowflakes by simulating brownian motion.
 
 
 
-<p align="center"><img width="533" height="300" src="https://user-images.githubusercontent.com/111876987/205454697-17a8763e-aa2b-4c67-8b61-611c4b8443b2.gif">
+<p align="center"><img width="500" height="500" src="https://user-images.githubusercontent.com/111876987/205458433-a3be3ca5-54b7-4c89-80d5-8a4757e6f270.gif">
   </p>
-  
+
 > **Configurations**: 
 >
 >- Particle radius (Radius): 2px
