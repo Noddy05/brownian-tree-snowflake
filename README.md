@@ -20,4 +20,3 @@ By changing the 3 settings above you can get unique snowflake patterns:
 
 <p align="center"><img width="500" height="500" src="https://user-images.githubusercontent.com/111876987/206023101-f9119a4b-ad77-4b24-a3a3-9789792ad3dc.png">
   </p>
-Changing y-spread under snowflake generation
